@@ -1,4 +1,4 @@
-🎮 # Multiplayer FPS – Unity & Photon PUN 2
+#🎮 Multiplayer FPS – Unity & Photon PUN 2
 
 Code-Only Multiplayer Architecture Demonstration
 

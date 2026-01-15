@@ -39,8 +39,6 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ## Game Preview (Screenshots)
 
-> Add your screenshots inside a folder called: `GamePreview/`
-
 ### Global Leaderboard UI
 ![Global Leaderboard](GamePreview/leaderboard.png)
 
@@ -70,6 +68,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 /Scenes Unity scenes (menu, lobby, game scenes)
 /ProjectSettings Unity configuration
 /UserSettings Unity editor settings (local editor preferences)
+/GamePreview
 /README.md
 
 

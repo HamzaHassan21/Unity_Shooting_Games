@@ -1,91 +1,110 @@
-# Multiplayer FPS – Unity & Photon PUN 2 🎮
+# 🦏 Rhino Shooter Bazooka — Multiplayer Beta (CW2)
 
-Code-Only Multiplayer Architecture Demonstration
+This repo is my **Coursework 2 (beta extension)** of my CW1 Unity game.
+CW1 was the core gameplay, and CW2 extends it by adding:
 
-This repository contains the core scripts and project configuration for a Unity multiplayer FPS built with Photon PUN 2.
-The full Assets folder is excluded; this repo focuses on the networking logic, gameplay systems, and overall architecture.
+- **Photon PUN 2 multiplayer** (rooms, lobbies, syncing gameplay)
+- **Photon Chat** (lobby + in-game chat)
+- **PlayFab integration** (player login + display names + global leaderboards)
+- **Persistent player data** (saved locally using JSON → Base64 → encryption)
 
-# Key Features
+The goal of this repo is to show the **networking + backend code and setup**, not a full Unity Assets export.
 
-Photon room creation, matchmaking, and room list UI
+---
 
-Deterministic spawn point system
+## # ✅ Key Features
 
-Synchronized shooting & damage via RPCs
+### ## Photon PUN 2 Multiplayer
+- Connect / join lobby
+- Create rooms + join random room
+- Multiple clients tested (separate instances)
+- State syncing + multiplayer flow
 
-Health syncing across all clients
+### ## Photon Chat
+- Real-time chat in lobby (and usable during play)
+- Toggle UI while playing so it doesn’t interrupt gameplay
 
-Player death + automatic respawn
+### ## PlayFab (Persistence + Leaderboards)
+- Login using **custom ID**
+- Auto-assign **Display Name** on first login
+- Global leaderboard(s) pulled dynamically
+- Leaderboard UI generated at runtime from PlayFab data
 
-Score tracking and winner detection
+### ## Local Saved Player Data
+- Stores player stats like wins + custom metric
+- Saved locally as:
+  **JSON → Base64 → encrypted file**
+- Prevents casual tampering (not plain text)
 
-Master Client–controlled scene loading and game flow
+---
 
-# Repository Structure
-/ProjectSettings     Unity project configuration
-/UserSettings        Editor preferences
+## # 🎮 Game Preview (Screenshots)
 
-/Scripts
-    /Gameplay        Movement, shooting, health, respawn
-    /Networking      Room logic, game flow, spawning, scoring
-    /UI              UI management + room list items
+> Add your screenshots inside a folder called: `GamePreview/`
 
-# Networking Overview
+### Global Leaderboard UI
+![Global Leaderboard](GamePreview/leaderboard.png)
 
-Built with Photon PUN 2 using a Master Client–driven model:
+### Multiplayer Lobby
+![Lobby](GamePreview/lobby.png)
 
-RPC-based damage and health sync
+### Gameplay View
+![Gameplay](GamePreview/gameplay.png)
 
-PhotonView ownership for authority
+### Personal Best Popup
+![Personal Best](GamePreview/personalbest.png)
 
-Master Client handles scene loading and win conditions
+### Lobby Chat
+![Chat](GamePreview/chat.png)
 
-Spawn points and scores synced across clients
+### Repo Structure
+![Repo Structure](GamePreview/repo-structure.png)
 
-# Gameplay Flow
+✅ Tip: rename your images exactly to match the filenames above.
 
-Join/create Photon room
+---
 
-Master Client loads game scene
+## # 📁 Repository Structure
 
-Players spawn at predefined points
+/Scripts Core gameplay + networking + PlayFab + UI logic
+/Prefabs Key prefabs used (player, UI panels, etc.)
+/Scenes Unity scenes (menu, lobby, game scenes)
+/ProjectSettings Unity configuration
+/UserSettings Unity editor settings (local editor preferences)
+/README.md
 
-Shooting triggers RPCs → damage applied
 
-Player respawns on death
+---
 
-Score updates → winner selected
+## # ▶️ How To Run
 
-# How to Use
+### 1) Unity Version
+Open using the **same Unity version 6000.0.58f2**
 
-Create a new Unity project
+### 2) Required Imports
+This project expects you to have:
+- **Photon PUN 2**
+- **Photon Chat**
+- **PlayFab SDK**
 
-Import Photon PUN 2
+### 3) Setup IDs
+- Set Photon App ID in: **PhotonServerSettings**
+- Set PlayFab Title ID in the PlayFab editor settings
 
-Add your Photon App ID in PhotonServerSettings
+### 4) Run
+- Start from the **Main Menu scene**
+- Join multiplayer using 2 clients (or ParrelSync if used)
 
-Drop in:
+---
 
-/Scripts
+## # 🧠 Notes (Important)
+- The leaderboard updates based on PlayFab data (MostKills / Wins etc.)
+- Display name is only set if it’s missing, otherwise PlayFab keeps the old one
+- Local save file is encrypted, so values aren’t stored in plain text
 
-/ProjectSettings
+---
 
-/UserSettings
+## # 📜 License
+MIT — free to reuse for learning/demo purposes.
 
-Assign scripts to your prefabs and UI elements
 
-Ideal for learning, coursework, or showcasing multiplayer logic.
-
-# Demonstrates
-
-Photon networking fundamentals
-
-RPC communication patterns
-
-Multiplayer architecture & game flow
-
-Scene management via Master Client
-
-# Licenses
-
-MIT License — free to use and modify.

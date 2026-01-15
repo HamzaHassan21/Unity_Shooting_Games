@@ -11,25 +11,25 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-# Key Features
+## Key Features
 
-## Photon PUN 2 Multiplayer
+### Photon PUN 2 Multiplayer
 - Connect / join lobby
 - Create rooms + join random room
 - Multiple clients tested (separate instances)
 - State syncing + multiplayer flow
 
-## Photon Chat
+### Photon Chat
 - Real-time chat in lobby (and usable during play)
 - Toggle UI while playing so it doesn’t interrupt gameplay
 
-## PlayFab (Persistence + Leaderboards)
+### PlayFab (Persistence + Leaderboards)
 - Login using **custom ID**
 - Auto-assign **Display Name** on first login
 - Global leaderboard(s) pulled dynamically
 - Leaderboard UI generated at runtime from PlayFab data
 
-## Local Saved Player Data
+### Local Saved Player Data
 - Stores player stats like wins + custom metric
 - Saved locally as:
   **JSON → Base64 → encrypted file**
@@ -37,7 +37,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-# Game Preview (Screenshots)
+## Game Preview (Screenshots)
 
 > Add your screenshots inside a folder called: `GamePreview/`
 
@@ -63,7 +63,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 /Scripts Core gameplay + networking + PlayFab + UI logic
 /Prefabs Key prefabs used (player, UI panels, etc.)
@@ -75,7 +75,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-# ▶️ How To Run
+## ▶️ How To Run
 
 ### 1) Unity Version
 Open using the **same Unity version 6000.0.58f2**
@@ -96,14 +96,14 @@ This project expects you to have:
 
 ---
 
-# Notes (Important)
+## Notes (Important)
 - The leaderboard updates based on PlayFab data (MostKills / Wins etc.)
 - Display name is only set if it’s missing, otherwise PlayFab keeps the old one
 - Local save file is encrypted, so values aren’t stored in plain text
 
 ---
 
-# 📜 License
+## 📜 License
 MIT — free to reuse for learning/demo purposes.
 
 

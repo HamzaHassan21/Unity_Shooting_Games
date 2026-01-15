@@ -54,7 +54,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 ### Lobby Chat
 ![Chat](GamePreview/LobbyChat.PNG)
 
-### Lobby Chat
+### Azure PlayFab Results
 ![Azure PlayFab](GamePreview/AzurePlayFab.PNG)
 
 

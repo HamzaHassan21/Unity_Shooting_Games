@@ -40,26 +40,23 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 ## Game Preview (Screenshots)
 
 ### Global Leaderboard UI
-![Global Leaderboard](GamePreview/leaderboard.png)
+![Global Leaderboard](GamePreview/GlobalLeaderboard.png)
 
 ### Multiplayer Lobby
-![Lobby](GamePreview/lobby.png)
+![Multiplayer Scene](GamePreview/MultiplayerScene.png)
 
 ### Gameplay View
-![Gameplay](GamePreview/gameplay.png)
+![MainMenu Scene](GamePreview/MainMenuScene.png)
 
 ### Personal Best Popup
-![Personal Best](GamePreview/personalbest.png)
+![Personal Best](GamePreview/PersonalBest.png)
 
 ### Lobby Chat
-![Chat](GamePreview/chat.png)
+![Chat](GamePreview/LobbyChat.PNG)
 
-### Repo Structure
-![Repo Structure](GamePreview/repo-structure.png)
+### Lobby Chat
+![Azure PlayFab](GamePreview/AzurePlayFab.PNG)
 
-✅ Tip: rename your images exactly to match the filenames above.
-
----
 
 ## Repository Structure
 

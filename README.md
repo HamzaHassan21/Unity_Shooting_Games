@@ -1,7 +1,6 @@
-# 🦏 Rhino Shooter Bazooka — Multiplayer Beta (CW2)
+# 🦏 Rhino Shooter Bazooka — Multiplayer Beta
 
-This repo is my **Coursework 2 (beta extension)** of my CW1 Unity game.
-CW1 was the core gameplay, and CW2 extends it by adding:
+This repository contains my Unity multiplayer beta build, where I expanded the game by integrating Photon Networking for real-time multiplayer features and PlayFab for player accounts, persistence, and global leaderboards.
 
 - **Photon PUN 2 multiplayer** (rooms, lobbies, syncing gameplay)
 - **Photon Chat** (lobby + in-game chat)
@@ -12,7 +11,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-## # ✅ Key Features
+## # Key Features
 
 ### ## Photon PUN 2 Multiplayer
 - Connect / join lobby
@@ -38,7 +37,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-## # 🎮 Game Preview (Screenshots)
+## # Game Preview (Screenshots)
 
 > Add your screenshots inside a folder called: `GamePreview/`
 
@@ -64,7 +63,7 @@ The goal of this repo is to show the **networking + backend code and setup**, no
 
 ---
 
-## # 📁 Repository Structure
+## # Repository Structure
 
 /Scripts Core gameplay + networking + PlayFab + UI logic
 /Prefabs Key prefabs used (player, UI panels, etc.)
@@ -97,7 +96,7 @@ This project expects you to have:
 
 ---
 
-## # 🧠 Notes (Important)
+## # Notes (Important)
 - The leaderboard updates based on PlayFab data (MostKills / Wins etc.)
 - Display name is only set if it’s missing, otherwise PlayFab keeps the old one
 - Local save file is encrypted, so values aren’t stored in plain text
